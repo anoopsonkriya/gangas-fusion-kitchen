@@ -28,7 +28,7 @@ function Diya({ className = '' }) {
 function App() {
   const [welcomeOpen, setWelcomeOpen] = useState(true);
   const [activeSlide, setActiveSlide] = useState(0);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
   const videoRef = useRef(null);
   const videoFrameRef = useRef(null);
 
@@ -87,11 +87,11 @@ function App() {
           <div className="hero-visual">
             <div className="hero-ring" />
             <div className="hero-image-frame hero-video-link" ref={videoFrameRef} onClick={openInstagramVideo} role="link" tabIndex={0} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') openInstagramVideo(); }} aria-label="Video auf Instagram ansehen">
-              <video ref={videoRef} autoPlay muted loop playsInline poster="/images/_GWK0581.jpg">
+              <video ref={videoRef} autoPlay loop playsInline poster="/images/_GWK0581.jpg">
                 <source src="/videos/hero-video.mp4" type="video/mp4" />
                 Dein Browser unterstützt dieses Video nicht.
               </video>
-              <button className="video-mute-button" onClick={toggleMute} aria-label={isMuted ? 'Ton einschalten' : 'Ton ausschalten'} aria-pressed={!isMuted}>
+              <button type="button" className="video-mute-button" onClick={toggleMute} aria-label={isMuted ? 'Ton einschalten' : 'Ton ausschalten'} aria-pressed={!isMuted}>
                 {isMuted ? 'Ton an' : 'Ton aus'}
               </button>
               <span className="video-hint">Auf Instagram ansehen <ArrowUpRight size={14} /></span>
