@@ -26,7 +26,7 @@ function Diya({ className = '' }) {
 }
 
 function App() {
-  const [welcomeOpen, setWelcomeOpen] = useState(true);
+  const [welcomeOpen, setWelcomeOpen] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
   const [isMuted, setIsMuted] = useState(false);
   const videoRef = useRef(null);
@@ -96,7 +96,7 @@ function App() {
               </button>
               <span className="video-hint">Auf Instagram ansehen <ArrowUpRight size={14} /></span>
             </div>
-            <div className="floating-note"><span>FUSION</span><strong>mit Gefühl</strong><small>seit Berlin 2024</small></div>
+            <div className="floating-note"><span>FUSION</span><strong>mit Gefühl</strong></div>
             <div className="hero-sparkle sparkle-one">✦</div>
             <div className="hero-sparkle sparkle-two">✧</div>
           </div>
@@ -119,30 +119,31 @@ function App() {
           </div>
           <div className="dish-grid">
             <article className="dish-card dish-card-featured">
-              <img src="/images/_GWK0457.jpg" alt="Fusion Chaat auf blauem Teller" />
+              <img src="/images/_GWK0478.jpg" alt="Samosa Chaat" />
               <div className="dish-info">
-                <div><h3>Gagan's Fusion Chaat</h3><p>Knusprig, frisch und voller Aromen</p></div>
-                <strong><del>9,90 €</del> 8,91 €</strong>
+                <div><h3>Samosa Chaat</h3><p>Knusprige Teigtaschen gefüllt mit würzigem Kartoffel-Erbsen-Mix, Kichererbsen
+Masala, Mango Chili Mayonnaise</p></div>
+                <strong><del>7,50 €</del> 6,75 €</strong>
               </div>
             </article>
             <article className="dish-card">
-              <img src="/images/_GWK0486.jpg" alt="Knusprige Fusion-Bällchen mit Sauce" />
+              <img src="/images/_GWK0486.jpg" alt="Paneer Bällchen" />
               <div className="dish-info">
-                <div><h3>Fusion Kofta</h3><p>Knusprige Bällchen · cremige Sauce</p></div>
-                <strong><del>14,90 €</del> 13,41 €</strong>
+                <div><h3>Paneer Bällchen</h3><p>Paneer Gemüse Bällchen & Tomaten Chutney, Enoki Pilze, Senf</p></div>
+                <strong><del>7,95 €</del> 7.15 €</strong>
               </div>
             </article>
             <article className="dish-card">
-              <img src="/images/_GWK0429.jpg" alt="Frischer Gagan's Salad" />
+              <img src="/images/_GWK0416.jpg" alt="Frischer Gagan's Salad" />
               <div className="dish-info">
-                <div><h3>Gagan's Garden Bowl</h3><p>Saisongemüse · Granatapfel · Kräuter</p></div>
-                <strong><del>12,90 €</del> 11,61 €</strong>
+                <div><h3>Mango Lassi</h3><p></p></div>
+                <strong><del>4,50 €</del> 4.05 €</strong>
               </div>
             </article>
           </div>
           <div className="menu-footer">
             <span>Mehr Lieblingsgerichte warten auf dich.</span>
-            <a className="text-link dark" href="https://gagans-fusion-kitchen.de/" target="_blank" rel="noreferrer">Zur Speisekarte <ArrowUpRight size={15} /></a>
+            <a className="text-link dark" href="https://gagans-fusion-kitchen.de/wp-content/uploads/2026/05/Gagans-Fusion-Kitchen-Speisekarte.pdf" target="_blank" rel="noreferrer">Zur Speisekarte <ArrowUpRight size={15} /></a>
           </div>
         </section>
 
